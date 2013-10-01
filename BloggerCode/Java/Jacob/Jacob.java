@@ -67,14 +67,4 @@ public class Jacob {
 		}
 		return obj;
 	}
-	
-	public static void main(String[] args){
-		Jacob jacob = new Jacob("SecureCnnStr");
-		jacob.setMethodName("EntSecurCnnStr");
-		jacob.setParams(new Object[]{"SOD","D:\\CBC\\encode\\","IBPS1455"});
-		jacob.call();
-		jacob.setMethodName("GetConnStr");
-		jacob.setParams(null);
-		String result = jacob.call().toString();
-	}
 }
